@@ -28,7 +28,7 @@ run:
     bnez  t1,done_run
     addi  t1,t1,1
     sb    t1,0(t0)   # incrementing visited count
-    lb    s4,0(s6)   # loading operand
+    lb    s4,0(s6)   # loading operator
     lw    s5,4(s6)   # loading argument
     addi  t0,s4,-97
     bnez  t0,no_add
